@@ -3,6 +3,7 @@ name: PR Labeler
 on:
   # Commit subjects are handled only as data; this workflow does not check out or run
   # pull request code.
+  # jactionlint ignore=dangerous-triggers
   pull_request_target:
     types: [opened, synchronize]
     branches:
